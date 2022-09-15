@@ -9,9 +9,12 @@ body{
     background-color: rgb(13, 13, 43);
     font-size: 1rem;
     line-height: 1.625;
-    font-family: Oxanium,sans-serif;
+    font-family: 'rubik',sans-serif;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
 }
-body[data-aos-duration='4000'] [data-aos],[data-aos][data-aos][data-aos-duration='4000'] {
+body[data-aos-duration='3000'] [data-aos],[data-aos][data-aos][data-aos-duration='3000'] {
      transition-duration: 3000ms;
 }
 body p, body a{
@@ -29,6 +32,13 @@ body a{
 body input[type='submit']{
      cursor: pointer;
 }
+/* header{
+    padding: 25px 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+} */
 .first{
     max-height: 100vh;
     width: 100%;
@@ -117,9 +127,9 @@ nav ul{
     margin-left: 1.75rem;
 }
 .landing-page .save-text {
-    border-radius: 32px;
-    padding: 4px 16px 4px 16px;
-    margin: 0.25rem 1rem 0.25rem 0.25rem;
+    border-radius: 1rem;
+    padding: 8px 16px 8px 16px;
+    /* margin: 0.25rem 1rem 0.25rem 0.25rem; */
     background-color: #fff;
 }
 .landing-page .save-text p {
@@ -141,25 +151,30 @@ nav ul{
     color: #fff;
 }
 .landing-page-btn{
-    height: 2rem;
-    width: 180px;
+    /* height: 2rem; */
+    width: fit-content;
     border-radius: 32px;
-    padding: 16px 16px 16px 24px;
+    padding: 10px 14px;
     background: #3671e9;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0;
+    /* padding: 0; */
     margin-top: 15px;
+}
+.landing-page-btn button{
+    display: flex;
+    gap: 15px;
+    align-items: center;
 }
 button i{
     background-color: #FFFFFF;
-    font-size: 15px;
+    font-size: 12px;
     color: #3671e9;
-    border-radius: 14px;
+    border-radius: 50%;
     padding: 5px;
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: space-around;
 }
 .landing-page button {
@@ -190,6 +205,7 @@ button i{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    /* padding-bottom: 300px; */
 }
 .number{
     display: flex;
@@ -245,8 +261,10 @@ button i{
     border: none;
 }
 .Earn{
-    position: relative;
     background-color: #0D0D2B;
+    position: relative;
+    /* width: 100%;
+    bottom: -30% */
 }
 .Earn, .Earn-content{
     max-width: 100%;
@@ -335,8 +353,9 @@ button i{
 .Trade{
     background-color: rgb(249, 250, 251);
     height: 80vh;
+    /* padding-top: 200px;
+    padding-top: 100px; */
 }
-
 .cryptocurrencies{
     max-width: 90%;
     margin: auto;
@@ -347,6 +366,7 @@ button i{
     text-align: center;
     margin: auto;
     padding: 100px 0 0px;
+    /* margin-bottom: 25px; */
 }
 .crypto{
     display: flex;
@@ -356,11 +376,14 @@ button i{
 }
 .Cryptocurrency{
     text-align: center;
+    /* width: 25%; */
     width: 25%;
     height: 50vh;
     border: 3px solid #e5e7eb;
     border-radius: 15px;
     padding: 20px;
+    /* border-radius: 15px; */
+    /* padding: 20px; */
     margin-bottom: 25px;
     cursor: pointer;
 }
@@ -534,12 +557,12 @@ footer .footer-content .first .logo{
     gap: 10px;
 }
 footer .footer-content .first .Quick h3,
-footer .footer-content .first .Resources h3{
+footer .footer-content .Resources h3{
     margin-bottom: 20px;
     font-size: 1rem;
 }
 footer .footer-content .first .Quick a,
-footer .footer-content .first .Resources a{
+footer .footer-content .Resources a{
     display: block;
     text-decoration: none;
     color: #FFFFFF;
@@ -605,9 +628,13 @@ footer .end .icon i{
         margin-top: -80px;
         color: #FFFFFF;
     }
-    nav{
+    /* header{
+        width: 100%;
         z-index: 10;
-    }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    } */
     #links{
         display: none;
         position: absolute;
@@ -682,10 +709,16 @@ footer .end .icon i{
         gap: 25px;
     }
     footer .footer-content .first .Payment{
-        width: 500px;
+        width: 100%;
     }
-    footer .footer-content .first .Payment h3{
-        width: 10%;
+    footer .footer-content .first .Payment h2{
+        width: 90%;
+    }
+    footer .footer-content .first .Payment .img{
+        width: 90%;
+    }
+    footer .footer-content .first .Payment .img img{
+        width: 20%;
     }
     footer .end{
         display: flex;
@@ -710,6 +743,7 @@ footer .end .icon i{
         display: flex;
         justify-content: center;
     }
+
     .start{
         padding: 0px 0;
     }
